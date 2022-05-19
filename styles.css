@@ -1,0 +1,133 @@
+* {
+    font-family: Lato;
+}
+
+body {
+    margin: 0px;
+    font-family: Lato;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* NAR BAR STYLE */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.nav-bar-leftside{
+    display: flex;
+}
+
+.nav-bar > .nav-bar-leftside > div{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-bar-l-content{
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+
+.nav-bar-leftside a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* .nav-bar-leftside:hover {
+    border-bottom: 1px solid black;
+} */
+
+.nav-bar-leftside a:hover {
+    color: black;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important
+}
+
+/* CONTENT LAYOUT STYLE */
+.portfolio-items-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-layout{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-layout{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0px 100px;
+    
+}
+
+.logo-display img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* DONOT FORGET YOU NEED TO BE SPECIFIC WITH THIS SELECTOR */
+.img-text-layout .text-display{
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.img-text-layout:hover .text-display{
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+/* CLASS TO  BE ADDED TO JAVASCRIPT FOR ANIMATION EFFECT */
+.img-darkening{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* About Page */
+.writeup-photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.author-pic img{
+    /* height: 700px;
+    width: 800px; */
+    width: 100%;
+}
+
+.author-bio{
+    padding: 30px;
+}
+
+.author-bio h1{
+    color: lightseagreen;
+}
